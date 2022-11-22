@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var temperatureTextField: UITextField!
     
-    var resultFahrenheit: Double = 0.0
+    //var resultFahrenheit: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +28,7 @@ class ViewController: UIViewController {
     
     @IBAction func convertButtonPressed(_ sender: Any) {
         convertTempertature()
+        temperatureTextField.resignFirstResponder()
     }
     
     private func convertTempertature(){
